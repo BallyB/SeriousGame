@@ -32,8 +32,8 @@ goog.require('goog.math');
  * Lookup for names of languages.  Keys should be in ISO 639 format.
  */
 BlocklyGames.LANGUAGE_NAME = {
-  'az': 'Azərbaycanca',
-  'en': 'English',
+  'az': 'Azerbaycan',
+  'en': 'Robotique',
   'tr': 'Türkçe',
 };
 
