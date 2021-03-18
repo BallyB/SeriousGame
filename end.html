@@ -7,12 +7,31 @@
 </head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    var compteur = 0;
+
+    setInterval(function() {
+        if(compteur % 2 == 0){
+            $('#robot .img1').show();
+            $('#robot .img2').hide();
+        }
+        else{
+            $('#robot .img1').hide();
+            $('#robot .img2').show();
+        }
+        compteur++;
+    }, 1000);
+</script>
 <body>
     <div id="game">
         <div id="character"></div>
         <div id="block">
             <img src="images/text fin.png"/><br/><br/><br/>
             <img src="images/text fin2.png"/><br/><br/><br/>
+            <div id="robot">
+                <img src="images/17-robot-fall-right-ConvertImage.png" class="img1"/>
+                <img src="images/19-robot fall right.png" class="img2" style="display: none;"/>
+            </div><br/><br/>
             <form action="index.html">
             <button type="submit" class="btn btn-success"href="index.html">Revenir au menu</button></form>
         </div>
