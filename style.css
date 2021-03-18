@@ -1,0 +1,9 @@
+html{
+    background-color: black;
+}
+#block, #start{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+}
